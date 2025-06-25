@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Stone, Paper, Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Stone, Paper, Scissor</h1>
+        <div class="scoreboard-container">
+            <div class="scoreboard">
+                <p class="player">Human</p>
+                <p id="h-score">0</p>
+                <p id="h-selection"></p>
+            </div>
+            <div class="scoreboard">
+                <p class="player">Computer</p>
+                <p id="c-score">0</p>
+                <p id="c-selection"></p>
+            </div>
+        </div>
+        <p id="result"></p>
+        <div class="btn-container">
+            <button class="btn" id="stone" onclick="playGame('Rock')">Stone</button>
+            <button class="btn" id="paper" onclick="playGame('Paper')">Paper</button>
+            <button class="btn" id="scissor" onclick="playGame('Scissor')">Scissor</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

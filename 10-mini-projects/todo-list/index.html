@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="todo-list-container">
+        <div class="topbar-container">
+            <div class="topbar">
+                <p class="time">6:00</p>
+                <div class="camera"></div>
+                <div class="status-icons">
+                    <span class="more-actions">....</span>
+                    <img src="./icons/wi-fi.png" alt="wi-fi" height="18px" />
+                    <img src="./icons/full-battery.png" alt="battery-indicator" height="20px" />
+                </div>
+            </div>
+        </div>
+
+        <h1 class="heading">To Do List</h1>
+        <div class="Task-container">
+            <input type="text" placeholder="search" class="input-box" id="input-box" />
+            <button class="task-btn" onclick="addTask()">Add Task</button>
+            <div class="tasks-cards-container" id="tasks-cards-container">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

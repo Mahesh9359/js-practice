@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmic Dice Roller</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="dice-roller-container">
+        <h2>🎲 Dice Roller</h2>
+        <img src="./icons/set1/dice (1).png" class="dice-img" id="dice-img" alt="dice" />
+        <br>
+        <button class="roll-btn" onclick="rollDice()">Roll Dice</button>
+    </div>
+
+    <div class="dice-selector">
+        <img src="./icons/set1/dice (1).png" class="dice-option selected" onclick="selectDiceSet('set1', this)" />
+        <img src="./icons/set2/dice (1).png" class="dice-option" onclick="selectDiceSet('set2', this)" />
+        <img src="./icons/set3/dice (1).png" class="dice-option" onclick="selectDiceSet('set3', this)" />
+    </div>
+
+    <script src="script.js">    </script>
+</body>
+
+</html>

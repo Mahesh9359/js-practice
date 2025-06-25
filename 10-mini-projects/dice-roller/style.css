@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top left, #090e20, #000);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dice-roller-container {
+    background: rgba(30, 30, 47, 0.6);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.dice-roller-container:hover {
+    transform: scale(1.03);
+}
+
+.dice-img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 10px #0ff);
+}
+
+.roll-btn {
+    background: linear-gradient(45deg, #0ff, #08f);
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.roll-btn:hover {
+    background: linear-gradient(45deg, #08f, #0ff);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.animation {
+    animation: roll 0.5s ease-in-out;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+.dice-selector {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.dice-option {
+    width: 55px;
+    height: 55px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.dice-option:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.dice-option.selected {
+    border-color: #0ff;
+    box-shadow: 0 0 15px #0ff;
+    filter: brightness(1.5);
+}
