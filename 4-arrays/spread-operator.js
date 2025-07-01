@@ -6,10 +6,10 @@ const copy = [...original];
 const merged = [...[1, 2], ...[3, 4]]; // [1,2,3,4]
 
 //Function arguments
-function sum(a, b, c) {
-    return a + b + c;
+function sum(a, b, c, d) {
+    return a + b + c + d;
 }
-const nums = [1, 2, 3];
+const nums = [1, 2, 3, 4];
 console.log(sum(...nums)); // 6
 
 //Convert string to array
