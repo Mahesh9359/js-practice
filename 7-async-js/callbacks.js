@@ -14,16 +14,6 @@ function divide(a, b, callback) {
   }
 }
 
-//Callback hell example
-function getUserData(userId, callback) {
-  getUser(userId, (user) => {
-    getPosts(user.id, (posts) => {
-      getComments(posts[0].id, (comments) => {
-        callback(comments);
-      });
-    });
-  });
-}
 
 //Sequential async operations
 function doTask1(callback) {
